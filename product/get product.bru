@@ -1,0 +1,25 @@
+meta {
+  name: get product
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://127.0.0.1:8000/get-all-tenants
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Kain",
+    "gender": "male",
+    "email": "67@highscore.com",
+    "roomNumber": 2
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

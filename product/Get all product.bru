@@ -1,0 +1,20 @@
+meta {
+  name: Get all product
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://127.0.0.1:8000/get_product/Biscuit
+  body: json
+  auth: inherit
+}
+
+body:json {
+  "swit"
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
